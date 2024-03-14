@@ -13,58 +13,173 @@
 
         <nav>
               <ul>
-                <li><div class="selected-nav"><a href="#">What I do</a></div></li>
-                <li><div><a href="#">Experience</a></div></li>
-                <li><div><a href="#">Work</a></div></li>
-                <li><div><a href="#">Skills</a></div></li>
+                <li><div ><a href="index.html#whtid" onclick="toggleNav(this)">What I do</a></div></li>
+                <li><div><a href="index.html#exp">Experience</a></div></li>
+                <li><div><a href="index.html#work">Work</a></div></li>
+                <li><div><a href="index.html#skills">Skills</a></div></li>
             </ul>
         </nav>
         <div class="hero-wrapper">
             <div class="profile-desc">
                 <h1>Aaron Mangbenza</h1>
                 <h3>Experienced Software Engineer</h3>
-                <p>
-                    I build Beautiful crafted experiences for the web
-                </p>
-                <div class="hire-me-btn">
-                    Hire me 
-                    <img src="images/arrow_right.png" width="20" height="20" alt="">
+                <h4>
+                    I Build <span class="accent-word">Beautiful </span> Crafted experiences for the web
+                </h4>
+                <div class="hero-btn-wrapper">
+
+                    <div class="hire-me-btn">
+                        <a href="mailto:aaronmangbenza@gmail.com" style="color: black;text-decoration: none;">Hire me </a>
+                        <img src="images/arrow_right.png" width="20" height="20" alt="">
+                    </div>
+                    <div class="hire-me-btn">
+                        <a href="mailto:aaronmangbenza@gmail.com" style="color: black;text-decoration: none;">Request a quote </a>
+                        <!-- <img src="images/arrow_right.png" width="20" height="20" alt=""> -->
+                    </div>
+
+                </div>
+               
+               
+                <div class="network-group" >
+                    
+                    <div class="network-item pic-discord" onclick="location.href='https://discord.com'">
+                            
+                    </div>
+                    <div class="network-item pic-git" onclick="location.href='https://github.com/hultime78'">
+                        
+                    </div>
+                    <div class="network-item pic-linkedin" onclick="location.href='https://linkedin.com/in/aaron-mangbenza-3ab89b1ba'">
+
+                    </div>
+                    
+                    <div class="network-item pic-as" onclick="location.href='https://www.artstation.com/aaronmangbenza8'">
+
+                    </div>
+                    
                 </div>
             </div>
             <div class="scroller-nav">
-
-                <div class="about-card">
-                    <p>Hello my name is Aaron, and i am a <b>Software Engineer</b>, with 4 years of experience in creating 
-                    and delivering innovative and user-friendly solutions for various domains and platforms.
-                    I am passionate about learning new technologies,
-                    and applying them to solve real-world problems
-                    and improve people's lives.</p>
-
-                    <p>When I'm not <b>coding</b>, i'm usually painting, drawing or learning 3D Sculpture.</p>
-                    <div class="liner"></div>
-                    <div class="blue-btn">
-                        VIEW FULL RESUME
-                        <img src="images/download.png" alt="download_logo" width="20" height="20">
+                <div>
+                    <div class="about-card tp-50">
+                        <p>Hello my name is Aaron, and i am a <b>Software Engineer</b>, with 4+ years of experience in creating 
+                        and delivering innovative and user-friendly solutions for various domains and platforms.
+                        I am passionate about learning new technologies,
+                        and applying them to solve real-world problems
+                        and improve people's lives.</p>
+    
+                        <p>When I'm not <b>coding</b>, i'm usually painting, drawing or learning 3D Sculpture.</p>
+                        <div class="liner"></div>
+                        <div class="blue-btn">
+                            <a href="/images/AARON MANGBENZA CV EN.pdf">VIEW FULL RESUME</a>    
+                            <img src="images/download.png" alt="download_logo" width="20" height="20">
+                        </div>
                     </div>
                 </div>
-                <div class="whtid-card">
+               
+
+                <div  id="whtid">
+                    <div class="row whtid-card tp-50">
+                    
+                        <div class="id-item-blue">Frontend Developement</div>
+                        <div class="id-item">Responsive UI design</div>
+                        <div class="id-item-blue">Backend Developement</div>
+                        <div class="id-item">Android Developement</div>
+                        <div class="id-item-blue">SaaS Developement</div>
+                        <div class="id-item">API Design</div>
+                        <div class="id-item">API Testing</div>
+                        <div class="id-item-blue">Code Refactoring</div>
+    
+                    </div>
+                </div>
+               
+                <div id="exp" >
+                <div class="row exp-card about-card tp-50">
+
+                    <div class="row" style="margin-top: 20px;">
+
+                        <div class="column-30">
+                            2023 - Present
+                        </div>
+                        <div class="column-60">
+                            <h4>Software development engineer II at <a class="exp-link" href="https://www.bmlcenter.com/" target="_blank">BML BUSINESS CENTER LLC</a></h4>
+                            <p>I am mainly, designing and developping softwares & web applications using
+                                an impressive technology stack : spring boot, asp.net core, azure devops,
+                                docker, Git, visual studio, intellij
+                                While also coding, debugging, testing and troubleshooting throughout the
+                                application development process </p>
+                            <div class="c-skill-wrapper">
+                                <div class="c-skill">Angular</div>
+                                <div class="c-skill">Blazor</div>
+                                <div class="c-skill">Spring</div>
+                                <div class="c-skill">ASP.NET</div>
+                            </div>
+                        </div>
+    
+                       </div>
+                       <div class="row" style="margin-top: 20px;">
+
+                        <div class="column-30">
+                            2019 - Present
+                        </div>
+                        <div class="column-60">
+                            <h4>Technical lead & Software Engineer at Wolfcompany Sarl</h4>
+                            <p>As a Software Engineer,and technical lead i combine my technical skills,
+                                and leadership abilities to deliver high quality software solutions , that meet the
+                            needs and expectations of various clients and users. I also oversee the software development lifecycle
+                        from planning to testing, and coordinate tasks and communication among team members and stakeholders. </p>
+                            <div class="c-skill-wrapper">
+                                <div class="c-skill">Angular</div>
+                                <div class="c-skill">Blazor</div>
+                                <div class="c-skill">Spring</div>
+                                <div class="c-skill">ASP.NET</div>
+                            </div>
+                        </div>
+    
+                       </div>
+                   <div class="row" style="margin-top: 20px;">
+
+                    <div class="column-30">
+                        2019 - Present
+                    </div>
+                    <div class="column-60">
+                        <h4>Freelance Software Engineer</h4>
+                        <p>As a Freelance Software Engineer, i apply the principles of engineering, to design,
+                        develop and maintain Software solutions that meet the needs of various clients and users.
+                        I use my creativity and technical skills to create Software programs or system that are functional,
+                        robust and user-friendly. </p>
+                        <div class="c-skill-wrapper">
+                            <div class="c-skill">Angular</div>
+                            <div class="c-skill">Blazor</div>
+                            <div class="c-skill">Spring</div>
+                            <div class="c-skill">ASP.NET</div>
+                        </div>
+                    </div>
+
+                   </div>
+
+                   
+                   
                     
                 </div>
-                <div class="work-card">
+                </div>
+                <div id="work">
+                <div  class="work-card tp-50">
                     <h4>1. Onyx Cloud Archiving platform</h4>
                     <div class="work-card-img">
-                        <div><img src="images/onyx-2.png" alt="onyx-1-logo" width="200"></div>
-                        <div><img src="images/onyx-3.png" alt="onyx-1-logo" width="200"></div>
+                        <div><img src="images/onyx-2.png" width="200" alt="onyx-1-logo" ></div>
+                        <div><img src="images/onyx-3.png" width="200" alt="onyx-1-logo" ></div>
                     </div>
                   
 
-                    <p>Onyx is a storage cloud archiving platform based on amazon web services (aws) 
+                    <p>Onyx is a storage cloud archiving platform based on amazon web services (aws) S3
                         that provides secure, scalable, and cost-effective solutions for long-term data
                         retention and preservation.
                     </p>
+                    <p style="font-family: 'Nunito' ;">Techs: ASP.NET Core, AWS SDK,AWS S3, Blazor, MySQL</p>
+
                     <div class="btn-wrapper row">
-                        <div class="btn-case-study">SEE CASE STUDY</div>
-                        <div class="btn-demo">REQUEST DEMO</div>
+                        <div class="btn-case-study">SEE CASE STUDY <img src="images/design.png" alt="study-img"></div>
+                        <div class="btn-demo"><a href="mailto:aaronmangbenza@gmail.com">REQUEST DEMO</a> <img src="images/sensor.png" alt="sensor-img"></div>
                     </div>
 
                     <h4>2. XBill Kit</h4>
@@ -74,21 +189,71 @@
                     </div>
                   
 
-                    <p>Onyx is a storage cloud archiving platform based on amazon web services (aws) 
-                        that provides secure, scalable, and cost-effective solutions for long-term data
-                        retention and preservation.
+                    <p>XBill is a software that helps users manage offences and payments related to those offences. It is designed to be user-friendly and efficient. With XBill, users can easily view their offences, pay fines, and track their payment history. 
                     </p>
+                    <p>Techs: Spring Boot, Thymeleaf, Rest repositories, Tomcat, PostgreSQL, Java</p>
                     <div class="btn-wrapper row">
-                        <div class="btn-case-study">SEE CASE STUDY</div>
-                        <div class="btn-demo">REQUEST DEMO</div>
+                        <div class="btn-case-study">SEE CASE STUDY <img src="images/design.png" alt="study-img"></div>
+                        <div class="btn-demo"><a href="mailto:aaronmangbenza@gmail.com">REQUEST DEMO</a> <img src="images/sensor.png" alt="sensor-img"></div>
                     </div>
+
+                    <h4>3. Aaron's Movies</h4>
+                    <div class="work-card-img">
+                        <div><img src="images/aa-3.jpg" alt="onyx-1-logo" width="200"></div>
+                        <div><img src="images/aa-1.jpg" alt="onyx-1-logo" width="200"></div>
+                    </div>
+                  
+
+                    <p>Aaron's movies is a simple Android "native" Rest client i made for fun, based on the <a href="https://www.episodate.com/api">Episodate</a> Movie Api
+                    </p>
+                    <p>Techs: Android SDK, Retrofit 2, Java</p>
+                    <div class="btn-wrapper row">
+                        <div class="btn-case-study">SEE CASE STUDY <img src="images/design.png" alt="github-logo"></div>
+                        <div class="btn-demo"><a href="images/aaron_s_movie.apk">DOWNLOAD APK</a> <img src="images/download.png" alt="github-logo"></div>
+                        <div class="btn-view-source"> <a href="https://github.com/hultime78/aaron-s-movies/tree/master" target="_blank"> SOURCE </a>  <img src="images/github.png"  alt="github-logo"></div>
+                    </div>
+
+                    <h4>4. PortFolio Website</h4>
+                    <div class="work-card-img">
+                        <div><img src="images/port-1.png" alt="onyx-1-logo" width="200"></div>
+                        <div><img src="images/port-2.png" alt="onyx-1-logo" width="200"></div>
+                    </div>
+                
+                    <p>For my new portfolio Website, i challenged myself to use "Glassmorphism" trend, as 
+                    the main UI style of the site, i really enjoyed designing and building it.
+                    </p>
+                    <p>Techs: Html, Css, Js</p>
+                    <div class="btn-wrapper row">
+                        <div class="btn-case-study">SEE CASE STUDY <img src="images/design.png" alt="study-img"></div>
+                    </div>
+
+                    <h4>5. Covid19 API </h4>
+                    <div class="work-card-img">
+                        <div><img src="images/cv-1.png" alt="onyx-1-logo" width="200"></div>
+                        <div><img src="images/cv-2.png" alt="onyx-1-logo" width="200"></div>
+                    </div>
+                  
+
+                    <p> A simple WEB API to get COVID-19 information of each province in DRC,
+                        With the uprising of Covid19, I created an API to help disseminate about DRC COVID-19 information.
+                        
+                    </p>
+                    <p>Techs: Springboot, Tomcat, Java, PostgreSQL</p>
+                    <div class="btn-wrapper row">
+                        <div class="btn-case-study"><a href="#">SEE CASE STUDY</a> <img src="images/design.png" alt="github-logo"></div>
+                        <div class="btn-view-source"> <a href="https://github.com/hultime78/covid19cd-API/tree/master" target="_blank"> SOURCE </a>  <img src="images/github.png"  alt="github-logo"></div>
+                    </div>
+                    <div class="see-more-txt" style="display: none;"><a href="#" >See More </a></div>
+                    <div class="liner2" style="margin-top: 20px;"></a></div>
                     
                 </div>
-                <div class="skills-card">
+                 </div>
+                <div id="skills">
+                <div   class="skills-card tp-50">
                     <div class="row">
                         <div class="sec-title"><img src="images/tune.png" height="40" width="40" alt="framework_logo">Languages & Frameworks</div>
                     </div>
-                    <div class="row" style="margin-left: 20px;">
+                    <div class="row" style="margin-left: 20px; margin-top: 10px;">
                             <div class="skill-item">
                                     Html
                             </div>
@@ -129,7 +294,7 @@
                      <div class="row">
                         <div class="sec-title"><img src="images/tools.png" height="40" width="40" alt="framework_logo">Tools</div>
                     </div>
-                    <div class="row left-20">
+                    <div class="row left-20" style="margin-top: 10px;">
                         <div class="skill-item-tool">
                             <img src="images/checked_filled.png"  alt="checked_img">Git & Github
                         </div>
@@ -143,7 +308,8 @@
                     
 
                 </div>
-                
+                <h6 style="text-align: center;">Coded in Visual Studio Code by yours truly.</h6>
+            </div>
             </div>
            
         </div>
@@ -151,6 +317,14 @@
 
     </div>
     
+    <script>
+        
+            function toggleNav(event){
+                var currentLink=event.target;
+                currentLink.classList.add("selected-nav");
+            }
 
+    </script>
+            
 </body>
 </html>

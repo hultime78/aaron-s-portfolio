@@ -1,9 +1,9 @@
-
 :root {
     --bd-purple: #4c0bce;
     --bd-violet: #712cf9;
     --bd-accent: #ffe484;
     --sexy-blue: linear-gradient(#2193b0 ,#6dd5ed);
+    --accent-blue:#6dd5ed;
 }
 
 
@@ -84,10 +84,63 @@ body{
     font-family: "Montserrat";
 }
 
+.accent-word{
+    color: var(--accent-blue);
+    font-weight: bold;
+}
+
+.hero-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.hire-me-btn{
+    margin-top: 20px;
+}
+
+.network-group{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.pic-discord{
+    background-image: url("../images/net1.png");
+}
+
+.pic-linkedin{
+    background-image: url("../images/net2.png");
+}
+
+.pic-git{
+    background-image: url("../images/net3.png");
+}
+.pic-as{
+    background-image: url("../images/net4.png");
+}
+
+.network-item{
+   margin: 0px 5px;
+   height: 30px;
+   width: 30px;
+   border: solid 1px white;
+   background-position: center;
+   background-size: cover;
+   border-radius: 50%;
+   
+    
+}
+ .network-item:hover{
+   cursor: pointer;
+} 
+
+.profile-desc p{
+    margin:10px 10px
+}
 .container{
-    background-image: url("../images/c-bg.jpg");
-    background-position: center;
-    background-size: cover;
+    background-image: url("../images/ac2.jpg");
+    /*background-position: center;*/
+    /*background-size: cover;*/
 }
 
 nav{
@@ -101,7 +154,8 @@ nav{
 }
 .selected-nav{
     border-bottom: solid 2.5px;
-    border-image: linear-gradient(#2193b0 ,#6dd5ed) 30;
+    /*border-image: linear-gradient(#2193b0 ,#6dd5ed) 30;*/
+    background-color: black;
 }
 
 nav ul {
@@ -125,84 +179,164 @@ nav ul li a{
     text-decoration: none;
     font-weight:bold ;
     color:white;
-        margin-bottom: 10px;
+    margin-bottom: 10px;
 
+}
+nav ul li a:active{
+    color: var(--accent-blue);
 }
 .hero-wrapper{
     display: flex;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.338);
+    background-color: rgba(0, 0, 0, 0.539);
 }
 .profile-desc{
+    padding-right: 30px;
+    padding-left: 90px;
+
     background-color: rgba(255, 255, 255, 0.164);
     z-index: 10;
     backdrop-filter: blur(10px);
     top: 0;
-    position: sticky;
     width: 50%;
+    position: sticky;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
+    text-align: left;
     align-content: center;
     height: 100vh;
 }
+.line-white {
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    margin-top: 50px;
+}
+
 .hire-me-btn{
     background-color: white;
     padding: 10px;
+    margin: 0px 10px 0px 0px;
     border-radius: 15px;
     color: black;
+    width: 30%;
+    text-align: left;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
+    align-content: center; 
 }
 .hire-me-btn img{
     margin-left: 5px;
 }
 .liner{
-    width: 60%;
+    width: 45%;
+    height: 1px;
+    background: linear-gradient(#2193b0 ,#6dd5ed);
+}
+
+.liner2{
+    margin-left: 40px;
+    width: 80%;
     height: 1px;
     background: linear-gradient(#2193b0 ,#6dd5ed);
 }
 
 .scroller-nav{
-    width: 50%;
     display: flex;
+    width: 50%;
     flex-direction: column;
 }
 .about-card{
     
-    background-color: rgba(0, 0, 0, 0.667);
+    background-color: rgba(0, 0, 0, 0.495);
     z-index: 10;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
     margin:20px;
     padding:50px;
-    margin-top: 120px;
     border-radius: 10px;
 }
 
+.whtid-card{
+    background-color: rgba(255, 255, 255, 0.164);
+    z-index: 10;
+    backdrop-filter: blur(14px);
+    margin:20px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+  
+}
+
+.id-item{
+    border:solid white 1px;
+    color:white;
+    float: left;
+    margin-right: 5px;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-size: 13px;
+    text-align: left;
+    padding: 10px;
+}
+.id-item-blue{
+    border:solid white 1px;
+    color:white;
+    float: left;
+    margin-right: 5px;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-size: 13px;
+    text-align: left;
+    padding: 10px;
+}
+.exp-link{
+    color: white;
+    
+}
 .work-card{
     background-color: rgba(255, 255, 255, 0.164);
     z-index: 10;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(14px);
     margin:20px;
     padding: 20px;
-    
+    margin-top: 20px;
     border-radius: 10px;
+}
+.btn-wrapper {
+    margin-left: 20px;
+}
+.work-card-img{
+    margin-left: 40px;
+}
+.work-card p{
+    margin-left:40px;
 }
 .work-card-img{
     display: flex;
 }
-.work-card-img img{
-    margin-right: 10px;
+.work-card-img div{
+    margin: 5px;
 }
 
+.work-card p a{
+    color: #6dd5ed;
+    font-weight: bold;
+}
+.btn-wrapper img{
+    width: 20px;
+    height: 20px;
+}
+.btn-wrapper{
+    margin-left: 40px;
+}
 .btn-demo{
     background:var(--sexy-blue) ;
-    width: 30%;
-    padding: 10px;
-    font-size: 14px;
+    width: 27%;
+    padding: 8px 0px;
+    font-size: 12px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -210,21 +344,36 @@ nav ul li a{
     align-content: center;
     color: black;
     margin-top: 20px;
-    font-size: 12px;
+    margin-right: 10px;
     border-radius: 8px;
 }
 .btn-case-study{
     background-color: white ;
     margin-right: 10px;
-    width: 30%;
-    padding: 10px;
+    width: 27%;
+    padding: 8px 0px;
+    font-size: 12px;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: black;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.btn-view-source{
+    background-color: black ;
+    margin-right: 10px;
+    width: 27%;
+    padding: 8px 0px;
     font-size: 14px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
-    color: black;
+    color: white;
     margin-top: 20px;
     font-size: 12px;
     border-radius: 8px;
@@ -234,6 +383,9 @@ nav ul li a{
     display: flex;
     flex-direction: row;
 
+}
+.btn-wrapper img{
+    margin-left: 5px;
 }
 
 .skills-card{
@@ -246,6 +398,7 @@ nav ul li a{
     
     border-radius: 10px;
 }
+
 .skill-item{
     padding:20px;
     display: flex;
@@ -256,7 +409,7 @@ nav ul li a{
     align-content: center;
     float: left;
     width: 10%;
-    height: 50px;
+    height: 45px;
     font-size: 12px;
     margin: 5px;
     border-radius: 50%;
@@ -274,10 +427,12 @@ nav ul li a{
     height: 30px;
 }
 .skill-item-tool{
+
     display: flex;
     flex-direction: row;
     align-content: center;
     align-items: center;
+    font-size: 14px;
     margin-left: 30px;
 }
 .skill-item-tool img{
@@ -301,6 +456,226 @@ nav ul li a{
     margin-top: 20px;
     border-radius: 8px;
 }
+.blue-btn a{
+    text-decoration: none;
+    color: black;
+}
+.btn-case-study a{
+    color: black;
+    text-decoration: none;
+}
+.btn-demo a{
+    color: black;
+    text-decoration: none;
+}
+.btn-view-source a{
+    color: white;
+    text-decoration: none;
+    
+}
+.btn-view-source a:visited{
+    color: white;
+    
+}
+
 .blue-btn img{
     margin-left: 5px;
+}
+.see-more-txt{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.see-more-txt a{
+    color: white;
+    text-decoration: none;
+
+}
+.see-more-txt a:hover{
+    color: var(--accent-blue);
+}
+.exp-card p{
+    font-size: 14px;
+}
+.exp-card h4{
+    margin:0px;
+    color: var(--accent-blue);
+}
+.c-skill-wrapper{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+}
+.c-skill{
+    margin: 5px;
+    border: 1px solid var(--accent-blue);
+    padding: 5px;
+    width: 20%;
+    border-radius: 8px;
+    float: left;
+}
+.tp-50{
+    margin-top: 100px;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 768px) { 
+  
+
+    .column-60 p{
+        padding:0px 10px 0px 0px;
+    }
+    .column-60 h4{
+        padding:0px 10px 0px 0px ;
+    }
+    .profile-desc p{
+        margin:0px 10px
+    }
+    .blue-btn{
+        width: 100%;
+    }
+    .skill-item{
+        height: 35px;
+        font-size: 11px;
+        float: left;
+    }
+    nav a {
+        font-size: 13px;
+    }
+    .c-skill-wrapper{
+      display: block;  
+    clear: both ;
+	overflow: hidden;
+
+
+    }
+    .c-skill{
+        width: 25%;
+
+    }
+   .work-card p{
+        text-align: center;
+        margin-left: 0px;
+        font-size: 13px;
+    }
+    .work-card-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-left: 0px;
+    }
+    .work-card{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+    .btn-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        align-content: center;
+    }
+    .btn-case-study,.btn-demo,.btn-view-source{
+        width: 80%;
+        margin-right: 0px;
+    }
+    .hero-wrapper{
+        clear: both ;
+	    overflow: hidden;
+        display: block;
+
+    }
+    
+    .profile-desc{
+        float: none;
+        padding: 0px;
+        width: 100%;
+        position: static;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+    .hero-btn-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .hire-me-btn{
+        margin: 10px 0px;
+        width: 90%;
+    }
+    .profile-desc h3{
+        margin: 20px 0px;
+    }
+    .profile-desc p{
+        margin:0px;
+        padding: 0px 20px;
+    }
+    .scroller-nav{
+        width: 100%;
+    }
+  
+    .liner{ width: 100%;}
+    .liner2{
+        margin-left: 0px;
+    }
+    .see-more-txt{
+        margin-left: 0px;
+        
+    }
+    .column-10,
+    .column-20,
+    .column-30,
+    .column-33,
+    .column-40,
+    .column-50,
+    .column-60,
+    .column-70,
+    .column-80,
+    .column-90,
+    .column-100{
+
+float: none;
+width: 100% ;
+
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 480px) {   
+  
+
+          .column-10,
+          .column-20,
+          .column-30,
+          .column-33,
+          .column-40,
+          .column-50,
+          .column-60,
+          .column-70,
+          .column-80,
+          .column-90,
+          .column-100{
+
+      float: none;
+      width: 100% ;
+  }
+ 
+
+  
+}
+
+.footer-link{
+
+text-decoration: none;
+color: #fff ;
+font-size:15px ; 
+}
+
 }
