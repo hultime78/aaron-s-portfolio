@@ -387,7 +387,10 @@ a {
 .glass-card,
 .service-card,
 .project-card,
-.stats-card {
+.stats-card,
+.company-flag,
+.company-flag-2,
+.company-flag-3 {
     border: 1px solid var(--border);
     background: var(--surface);
     backdrop-filter: blur(16px);
@@ -514,6 +517,35 @@ a {
 .timeline-content {
     padding: 30px;
     border-radius: 20px;
+}
+
+.company-flag, .company-flag-2, .company-flag-3 {
+    border-radius: 15px;
+    float:right;
+    padding : 5px;
+    
+}
+.company-flag{
+    img{
+        border-radius: 15px;
+        width: 50px;
+        height: 50px;
+    }
+}
+.company-flag-2{
+    img{
+        border-radius: 15px;
+        width: 45px;
+        height: 50px;
+    }
+}
+.company-flag-3{
+    img{
+        border-radius: 15px;
+        width: 45px;
+        height: 50px;
+        object-fit: scale-down;
+    }
 }
 
 .role-company,
